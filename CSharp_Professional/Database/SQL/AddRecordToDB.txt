@@ -1,0 +1,46 @@
+﻿DELETE from schedule;
+DELETE from students;
+DELETE from teachers; 
+DELETE from courses;
+
+
+Insert into courses
+    OVERRIDING SYSTEM VALUE
+VALUES
+(1,'Csharp'),
+(2,'C++'),
+(3,'Java'),
+(4,'Html'),
+(5,'python');
+
+Insert into teachers
+    OVERRIDING SYSTEM VALUE
+VALUES 
+(1,'Ivan', 'Ivanov','Ivanovich', 'ivan@mail.com', 1),
+(2,'Petr', 'Petrov','Petrovich', 'petr@mail.com', 2),
+(3,'Sidr', 'Sidorov','Sidorovich', 'sidr@mail.com', 3),
+(4,'Semen', 'Semenov','Semenovich', 'semen@mail.com', 4),
+(5,'Alexey', 'Alexeev','Alexeevich', 'alexey@mail.com', 5);
+
+Insert into students 
+     OVERRIDING SYSTEM VALUE
+VALUES
+(1,'Vasiliy', 'Vasiliev','Vasilievich', 'vasiliy@mail.com', 1),
+(2,'Nikonor', 'Nikonorov','Nikonorovich', 'nikonor@mail.com', 2),
+(3,'Panteley', 'Panteleev','Panteleevich', 'panteley@mail.com', 3),
+(4,'Aleksandr', 'Aleksandrov','Aleksandrovich', 'aleksandr@mail.com', 4),
+(5,'Ilya', 'Ilyin','Ilyich', 'ilya@mail.com', 5);
+
+Insert into schedule
+    OVERRIDING SYSTEM VALUE
+VALUES
+('2021-10-26', 1 , 1),
+('2021-10-30', 2 , 2),
+('2021-10-30', 3 , 3),
+('2021-10-30', 4 , 4),
+('2021-10-30', 5 , 5);
+
+--SELECT * from courses;
+--SELECT * from teachers;
+--SELECT * from students;
+SELECT * from schedule;

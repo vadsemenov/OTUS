@@ -1,2 +1,2 @@
 # OTUS
-Homeworks completed on the course "C# professional" by OTUS.ru
+Homeworks completed on the OTUS.ru courses 
